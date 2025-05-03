@@ -8,7 +8,7 @@ export default function Contact() {
     <section id='contact' className="min-h-screen py-20 px-4 sm:px-8 bg-transparent scroll-mt-16">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800 dark:text-white">
-          Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Connect</span>
+          Let&apos;s <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Connect</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

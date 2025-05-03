@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -66,7 +67,7 @@ export default function Projects() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <div className="relative h-60 overflow-hidden">
-                <img 
+                <Image
                   src={project.imageUrl} 
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
