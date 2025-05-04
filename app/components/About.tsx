@@ -80,7 +80,7 @@ export default function About() {
                     My Background
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-                    I'm <span className="font-semibold text-blue-500 dark:text-blue-400">Tarun</span>, a passionate Computer Science student currently in my 6th semester at Raj Kumar Goel Institute of Technology. 
+                    I&apos;m <span className="font-semibold text-blue-500 dark:text-blue-400">Tarun</span>, a passionate Computer Science student currently in my 6th semester at Raj Kumar Goel Institute of Technology. 
                     My journey in tech began with curiosity about how websites work, which evolved into a deep interest in full-stack development.
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default function About() {
                     Current Focus
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-                    Currently expanding my expertise in <span className="font-semibold text-purple-500 dark:text-purple-400">AI</span> and mastering <span className="font-semibold text-purple-500 dark:text-purple-400">Data Structures & Algorithms</span>. I'm actively solving problems on LeetCode and GFG
+                    Currently expanding my expertise in <span className="font-semibold text-purple-500 dark:text-purple-400">AI</span> and mastering <span className="font-semibold text-purple-500 dark:text-purple-400">Data Structures & Algorithms</span>. I&apos;m actively solving problems on LeetCode and GFG
                     and building projects to strengthen my practical skills.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed mt-3 md:mt-4">
@@ -122,7 +122,7 @@ export default function About() {
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed font-medium">
                     I believe in <span className="font-semibold text-yellow-500 dark:text-yellow-400">continuous learning</span> and adapting to new technologies. The ever-evolving tech landscape excites me, 
-                    and I'm committed to staying at the forefront of innovation.
+                    and I&apos;m committed to staying at the forefront of innovation.
                   </p>
                 </div>
               </div>

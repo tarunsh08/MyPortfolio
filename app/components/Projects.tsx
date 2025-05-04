@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaFire, FaStar } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 
 type Project = {
   title: string;
@@ -33,7 +33,7 @@ export default function Projects() {
       { threshold: 0.1 }
     );
     
-    document.querySelectorAll('.project-card').forEach((item, index) => {
+    document.querySelectorAll('.project-card').forEach((item) => {
       observer.observe(item);
     });
     

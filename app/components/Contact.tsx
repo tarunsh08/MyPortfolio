@@ -179,7 +179,7 @@ export default function Contact() {
             Have a project in mind or want to collaborate?
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+            I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your vision.
           </p>
           <a
             href="mailto:tarunsharma08.com@gmail.com"
