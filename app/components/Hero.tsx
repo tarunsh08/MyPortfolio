@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="w-24 h-1 mx-auto mt-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-pulse"></div>
       </article>
       <p className='text-gray-300 pt-2 text-xl'>
-        Hi, I am a Full-Stack Web Dev with expertise in building seamless web applications. I bridge the gap between design and functionality to deliver high-performance digital experiences. Let’s build something amazing together!</p>
+        Hi, I am a Full-Stack Web Dev with expertise in building seamless web applications. Let’s build something amazing together!</p>
     </section>
   )
 }

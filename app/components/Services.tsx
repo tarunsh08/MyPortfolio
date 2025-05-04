@@ -11,7 +11,7 @@ import {
   SiBootstrap,
   SiMongodb,
   SiSupabase,
-  SiFirebase // Using as proxy for LangChain
+  SiFirebase 
 } from 'react-icons/si';
 
 type SkillKey = 
