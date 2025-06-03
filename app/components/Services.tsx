@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { 
   SiJavascript, 
   SiTypescript,
@@ -37,37 +38,78 @@ export default function Services() {
 
   return (
     <section id="services">
-    <main className="min-h-screen py-20 px-4 sm:px-8 bg-transparent">
-      <div className="max-w-6xl mx-auto">
-        {/* Animated Title */}
-        <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-500">
-            My Tech Stack
-          </span>
-          <div className="w-24 h-1 mx-auto mt-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-pulse"></div>
-        </h2>
+      <motion.main 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="min-h-screen py-20 px-4 sm:px-8 bg-transparent"
+      >
+        <div className="max-w-6xl mx-auto">
+          {/* Animated Title */}
+          <motion.h2 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl md:text-6xl font-bold text-center mb-16"
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-500">
+              My Tech Stack
+            </span>
+            <motion.div 
+              initial={{ width: '0%' }}
+              whileInView={{ width: '100%' }}
+              transition={{ duration: 1.5 }}
+              className="w-24 h-1 mx-auto mt-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+            />
+          </motion.h2>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {skills.map((skill, index) => (
-            <div 
-              key={index}
-              className="relative group overflow-hidden rounded-xl p-6 bg-white/20 dark:bg-gray-800/50 backdrop-blur-md border border-white/20 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 to-purple-100/30 dark:from-blue-900/30 dark:to-purple-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="text-4xl mb-3 opacity-80 group-hover:opacity-100 transition-opacity">
-                  {getSkillIcon(skill)}
+          {/* Skills Grid */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+          >
+            {skills.map((skill, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ 
+                  duration: 0.6,
+                  delay: index * 0.1
+                }}
+                whileHover={{ 
+                  scale: 1.05,
+                  y: -5,
+                  boxShadow: '0 10px 20px rgba(0,0,0,0.1)'
+                }}
+                className="relative group overflow-hidden rounded-xl p-6 bg-white/20 dark:bg-gray-800/50 backdrop-blur-md border border-white/20 dark:border-gray-700 shadow-lg"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 to-purple-100/30 dark:from-blue-900/30 dark:to-purple-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center">
+                  <motion.div 
+                    initial={{ opacity: 0.5, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-4xl mb-3 opacity-80 group-hover:opacity-100 transition-opacity"
+                  >
+                    {getSkillIcon(skill)}
+                  </motion.div>
+                  <motion.h3 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-lg font-semibold text-gray-800 dark:text-gray-200 text-center"
+                  >
+                    {skill}
+                  </motion.h3>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 text-center">
-                  {skill}
-                </h3>
-              </div>
-            </div>
-          ))}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
-      </div>
-    </main>
+      </motion.main>
     </section>
   );
 }
