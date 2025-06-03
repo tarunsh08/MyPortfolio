@@ -46,6 +46,15 @@ export default function Projects() {
 
   const projects: Project[] = [
     {
+      title: "Eatech UI",
+      description: "A component Library for Next.js projects. Includes latest and futuristic UI components. It also have a Next.js documentation bot",
+      imageUrl: "/images/eatech.jpg", 
+      githubLink: "https://github.com/tarunsh08/AI-Lib",
+      technologies: ["Typescript","Next.js", "MDX", "Fumadocs","Botpress", "Tailwind CSS", "Shadcn"],
+      demoLink: "https://ai-lib-rust.vercel.app/",
+      featured: true
+    },
+    {
       title: "Nattygyatt",
       description: "A fitness platform where you can create your account, upload posts and buy memberships based on your preference.",
       imageUrl: "/images/nattygyatt.jpg", 
@@ -69,13 +78,6 @@ export default function Projects() {
       githubLink: "https://github.com/tarunsh08/Gdrive",
       technologies: ["React.js", "Tailwind CSS", "Supabase", "MongoDB", "Express.js"]
     },
-    {
-      title: "NewsBot",
-      description: "A news web that fetches real time data and displays news of various categories.",
-      imageUrl: "/images/newsbot.jpg",
-      githubLink: "https://github.com/tarunsh08/NewsBot",
-      technologies: ["React.js", "Bootstrap"]
-    }
   ];
 
   return (
