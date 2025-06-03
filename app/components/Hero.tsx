@@ -24,7 +24,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className='text-gray-300 pt-2 text-xl'
       >
-        Hi, I am a Full-Stack Web Dev with expertise in building seamless web applications. Let's build something amazing together!
+        Hi, I am a Full-Stack Web Dev with expertise in building seamless web applications. Let&apos;s build something amazing together!
       </motion.p>
     </section>
   )
